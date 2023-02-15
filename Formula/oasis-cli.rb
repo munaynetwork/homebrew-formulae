@@ -6,6 +6,12 @@ class OasisCli < Formula
   license "Apache-2.0"
   head "https://github.com/oasisprotocol/cli.git", branch: "master"
 
+  bottle do
+    root_url "https://github.com/munaynetwork/homebrew-formulae/releases/download/oasis-cli-0.1.0"
+    sha256 cellar: :any_skip_relocation, monterey:     "1c3a28166b6bb60e07105aa9d5aa595d0c7b28f45de44c9ff6d74ca8cc29a97e"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "c1759324a64452da613a93a40126b0d9267b4010c9a517c578858cd04dfa5a72"
+  end
+
   depends_on "go" => :build
 
   def install
