@@ -1,4 +1,6 @@
 name: brew test-bot
+env:
+  HOMEBREW_NO_INSTALL_FROM_API: 1
 on:
   push:
     branches:
