@@ -7,9 +7,9 @@ class OasisCli < Formula
   head "https://github.com/oasisprotocol/cli.git", branch: "master"
 
   bottle do
-    root_url "https://github.com/munaynetwork/homebrew-formulae/releases/download/oasis-cli-0.1.0"
-    sha256 cellar: :any_skip_relocation, monterey:     "1c3a28166b6bb60e07105aa9d5aa595d0c7b28f45de44c9ff6d74ca8cc29a97e"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "c1759324a64452da613a93a40126b0d9267b4010c9a517c578858cd04dfa5a72"
+    root_url "https://github.com/munaynetwork/homebrew-formulae/releases/download/oasis-cli-0.2.0"
+    sha256 cellar: :any_skip_relocation, monterey:     "4f3db2f99f4a47f590f013d3c56f06f28ed466c06347029beaf69ae8a125d7b9"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "78e5665bb0797e1cd79f9aca483a493002ffc0ce8d143b024b50aa96845818f1"
   end
 
   depends_on "go" => :build
