@@ -29,7 +29,7 @@ class OasisCli < Formula
     assert_match "Account operations", output
 
     output = shell_output("#{bin}/oasis network 2>&1")
-    assert_match "Manage network endpoints", output
+    assert_match "Consensus layer operations", output
 
     output = shell_output("#{bin}/oasis network list 2>&1")
     assert_match "mainnet (*)	b11b369e0da5bb230b220127f5e7b242d385ef8c6f54906243f30af63c815535", output
